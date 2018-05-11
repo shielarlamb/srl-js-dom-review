@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS-Dom</title>
+  <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/js-dom.css">
+</head>
+
+<body>
+	
+<div id="wrapper">
+  <h1>Basic JavaScript Syntax &amp; DOM Review</h1>
+
+  <!-- 
+    Setup a form to ask for the user's name & save it to local storage.
+
+    If there is a name already in storage, don't display the form & instead display 
+    a nice welcome message for the user.  With the message, provide a way for the person
+    to indicate it's not them & clear out local storage.  Then display the form for them
+    to enter and save their own name.
+  -->
+
+<!--Welcome message -->
+	
+<div id="newUserForm">
+	<!--This form appears in form load when user is found in local storage. -->
+
+	<h2 id="welcome-msg">Welcome to the JS-DOM page!</h2><div id="output-name">
+
+	</div></div>
+	<!--<p id="not-user">Not you?</p> -->
+	<div id="new-user">
+	<h2>Please enter your name below.</h2>
+	<input id="user-name" type="text" placeholder="Type your name">
+	<button id="enter-btn">Enter</button>
+	</div>
+	
+	
+	<section id="counting1">
+    <h2>Counting with Loops</h2>
+    <p>Get a number from the form below representing the max number to count to. Then use a pair of loops to count <b>by two's</b> from 1 up to the number and then back down to 1. Repeat this process once with a <code>while</code> loop and then a second time using a <code>for</code> loop.</p>
+
+    <div id="counting-input">
+      <label for="max">Max:</label>
+      <input id="max" type="number" min="1" max="250">
+      <input type="button" id="btn-count" value="Count">
+    </div>
+
+    <div id="counting-output-while">
+      <!--Write the output here (in a list) when using the while loops to count -->
+    </div>
+
+    <div id="counting-output-for">
+      <!--Write the output here (in a list) when using the for loops to count -->
+    </div>
+  </section>
+
+  <section id="test-neg">
+    <h2>Negative Number?</h2>
+    <p>Write a simple function that takes a number as input and returns a boolean true if the number is negative (less than zero) and false otherwise. Use that function to determine if the number entered on the form below is negative or not.</p>
+
+    <div id="test-neg-input">
+      <label for="test-num">Number: </label>
+      <input id="test-num" type="number" min="-1000000000" max="250">
+      <input type="button" id="btn-test-neg" value="Check Value">
+    </div>
+
+    <div id="test-neg-output">
+      <!--Write a nice output message (not just true/false) here saying if the number is negative or not. -->
+    </div>
+
+  </section>
+
+  <section id="hide-vowels">
+    <h2>Hide the Vowels</h2>
+    <p>Take a word entered on the form below and convert each vowel in the word to an *.</p>
+
+    <div id="hide-vowels-input">
+      <label for="hide-vowels-word">Word:</label>
+      <input id="hide-vowels-word" type="text">
+      <input type="button" id="btn-hide-vowels" value="Hide Vowels">
+    </div>
+
+    <div id="hide-vowels-output">
+      <!--Write a nice output message (not just true/false) here displaying the word with the vowels hidden. -->
+    </div>
+
+  </section>
+
+  <section id="arr-strings">
+    <h2>Arrays &amp; Strings</h2>
+    <p>Take a phrase entered on the form below and do the followg:</p>
+    <ul>
+      <li>Convert the string to an array of words.</li>
+      <li>Tell how many words are in the phrase.</li>
+      <li>For each word:
+        <ul>
+          <li>Show the word.</li>
+          <li>Tell how many letters are in the word.</li>
+          <li>Tell how many letters are vowels.</li>
+          <li>Tell how many letters are consonants.</li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <div id="arr-strings-input">
+      <label for="arr-strings-phrase">Phrase:</label>
+      <textarea id="arr-strings-word"></textarea>
+      <input type="button" id="btn-process-me" value="Process Me">
+    </div>
+
+    <div id="arr-strings-output">
+      <!--Write nice HTML here to organize the information about the phrase. -->
+    </div>
+
+	
+  </section>
+  <script src="js/js-dom-script.js"></script>
+	</div>	
+</body>
+
+</html>

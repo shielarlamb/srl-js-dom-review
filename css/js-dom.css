@@ -1,0 +1,51 @@
+body {background-color: lightblue;
+ color: black;
+font-family: Calibri, sans-serif;
+
+
+
+}
+
+li {list-style: none;
+color: darkred;}
+
+#wrapper {
+	
+	box-shadow: 8px, 8px, 8px;
+	border: 8px;
+	padding: inherit;
+	
+}
+
+span {
+	
+	color: darkred;
+	font-size: 50px;
+	text-align: right;
+	padding: inherit;
+	}
+
+#output-name {
+	
+	text-align: center;
+}
+
+#new-user {
+	
+	text-align: center;
+}
+
+#not-user {
+	text-align: center;
+	
+}
+
+h1 {
+	
+	text-align: center;
+}
+#welcome-msg {
+	text-align: center;
+}
+ul { display: inline;}
+
